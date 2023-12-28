@@ -1,0 +1,23 @@
+mkdir CoffeeHut_Frontend
+cd CoffeeHut_Frontend
+git init
+touch README.md FeaturedProducts.md discount_plans.md .gitignore
+git add .
+git commit -m "Initial commit for CoffeeHut_Frontend"
+
+cd ..
+
+mkdir CoffeeHut_Backend
+cd CoffeeHut_Backend
+git init
+touch README.md user_profiles.md payment_options.md commerce_transactions.md .gitignore
+git add .
+git commit -m "Initial commit for CoffeeHut_Backend"
+git add FeaturedProducts.md
+git commit -m "Add FeaturedProducts.md"
+git remote add origin https://github.com/your-username/CoffeeHut_Frontend.git
+git push -u origin master
+git checkout -b new_discounts
+git add discount_plans.md FeaturedProducts.md
+git commit -m "Add new discount plans and update FeaturedProducts"
+git push origin new_discounts
